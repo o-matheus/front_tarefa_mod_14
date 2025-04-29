@@ -11,7 +11,7 @@
 </head>
 
 <body>
-    <header id="cabecalho" class="navbar navbar-expand-lg sticky-top">
+    <header id="cabecalho" class="navbar navbar-expand-md sticky-top">
         <div class="nav-cabecalho container p-4 mt-0 mx-auto">
             <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#nav-menu">
                 <span class="navbar-toggler-icon"></span>
@@ -19,7 +19,7 @@
             <img class="logo ms-md-3 mt-md-1" src="img/logo_educaai.png"
                 alt="Logo EducaAI solução tecnologica para gestão escolar">
 
-            <button class="btn btn-dark rounded-pill ms-3 d-lg-none" type="button">Login</button>
+            <button class="btn btn-dark rounded-pill ms-3 d-md-none" type="button">Login</button>
 
             <nav id="nav-menu" class="navbar-collapse collapse justify-content-end">
                 <ul class="nav nav-pills d-block d-md-flex mt-3 mt-md-0">
@@ -41,8 +41,7 @@
         </div>
     </header>
     <div data-bs-spy="scroll" data-bs-target="cabecalho" data-bs-smooth-scroll="true">
-        <div class="carousel slide" data-bs-ride="carousel"
-            id="carousel-sobre">
+        <div class="carousel slide" data-bs-ride="carousel" id="carousel-sobre">
             <div class="carousel-inner">
                 <div class="carousel-item active">
                     <img src="img/Slide 5 - Planeje Aulas com IA.png" alt="Planeje aulas com IA">
@@ -59,8 +58,7 @@
                 </div>
             </div>
 
-            <button data-bs-target="#carousel-sobre" data-bs-slide="prev" class="carousel-control-prev"
-                type="button">
+            <button data-bs-target="#carousel-sobre" data-bs-slide="prev" class="carousel-control-prev" type="button">
                 <span class="carousel-control-prev-icon"></span>
             </button>
             <button data-bs-target="#carousel-sobre" data-bs-slide="next" class="carousel-control-next">
@@ -77,7 +75,7 @@
         <section id="sobre">
             <div class="container pt-5 pb-5">
                 <div class="row align-items-center justify-content-center p-5 rounded-5">
-                    <div class="col-md-5 mt-3 mt-mb-0">
+                    <div class="col-lg-5 mt-3 mt-mb-0">
                         <h2 class="text-center">Sobre o AprendeAI</h2>
                         <p class="texto-sobre">
                             O Aprende AI é uma plataforma desenvolvida para apoiar a transformação digital da educação.
@@ -95,34 +93,286 @@
                         </p>
 
                     </div>
-                    <div class="col-md-6">
+                    <div class="col-lg-6">
                         <img class="d-block img-sobre" src="img/imagem-sobre.png" alt="">
                     </div>
                 </div>
             </div>
         </section>
-        <section id="recursos" class="p-5 ">
+        <section id="recursos" class="p-5 mb-md-5 ">
             <div class="container">
                 <div class="row">
-                    <h2 class="text-center">Funcionalidades</h2>
+                    <h2 class="text-center mt-5 mb-5">Funcionalidades</h2>
                 </div>
                 <div class="row">
-                    <aside class="col-md-2">
+                    <aside class="col-lg-2 justify-content-center mb-4 ">
                         <nav class="nav nav-pills flex-collumn nav-recursos">
-                            
+                            <button type="button" data-bs-toggle="tab" data-bs-target="#planejamento"
+                                class="fs-lg-4 fw-bold text-center nav-link active mx-auto">
+                                Planejamento</button>
+                            <button type="button" data-bs-toggle="tab" data-bs-target="#avaliacoes"
+                                class="fs-lg-4 fw-bold text-center nav-link mx-auto">
+                                Avaliações</button>
+                            <button type="button" data-bs-toggle="tab" data-bs-target="#frequencia"
+                                class="fs-lg-4 fw-bold text-center nav-link mx-auto">
+                                Frequência</button>
+                            <button type="button" data-bs-toggle="tab" data-bs-target="#perfil-aluno"
+                                class="fs-lg-4 fw-bold text-center nav-link mx-auto">
+                                Perfil do aluno</button>
+                            <button type="button" data-bs-toggle="tab" data-bs-target="#relatorios"
+                                class="fs-lg-4 fw-bold text-center nav-link mx-auto">
+                                Relatórios</button>
+                            <button type="button" data-bs-toggle="tab" data-bs-target="#horarios"
+                                class="fs-lg-4 fw-bold text-center nav-link mx-auto">
+                                Horários</button>
                         </nav>
                     </aside>
-                    <div class="col-md-10">
+                    <div class="col-lg-10">
+                        <div class="tab-content">
+                            <div id="planejamento" class="tab-pane active">
+                                <div class="row align-items-center">
+                                    <div class="col-md-6">
+                                        <img class="d-block w-100" src="img/Professora com Plano de Aula.png" alt="">
+                                    </div>
+                                    <div class="col-md-5">
+                                        <h4 class="text-center">Planejamento didático sem complicação</h4>
+                                        <p class="fs-lg-5">
+                                            Crie, edite e armazene planos de aula personalizados de forma rápida e
+                                            eficiente, utilizando como base a BNCC e o DCRFOR. A plataforma considera as
+                                            grades curriculares do seu município, ajudando você a estruturar o conteúdo
+                                            de forma alinhada às diretrizes oficiais da educação.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
 
+                            <div id="avaliacoes" class="tab-pane">
+                                <div class="row align-items-center">
+                                    <div class="col-md-6">
+                                        <img class="d-block w-100" src="img/Professor com Avaliação e Gráfico.png"
+                                            alt="">
+                                    </div>
+                                    <div class="col-md-5">
+                                        <h4 class="text-center">Personalize suas avaliações com facilidade</h4>
+                                        <p class="fs-lg-5">
+                                            Crie, edite e armazene avaliações personalizadas de forma rápida e
+                                            prática, adaptadas às capacidades da sua turma. Desenvolva instrumentos
+                                            de avaliação que respeitam a diversidade dos estudantes, integrando
+                                            adaptações para alunos atendidos pelo AEE e promovendo a equidade no
+                                            processo de aprendizagem.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div id="frequencia" class="tab-pane">
+                                <div class="row align-items-center">
+                                    <div class="col-md-6">
+                                        <img class="d-block w-100"
+                                            src="img/Mulher interagindo com lista de frequência.png" alt="">
+                                    </div>
+                                    <div class="col-md-5">
+                                        <h4 class="text-center">Presenças sob controle</h4>
+                                        <p class="fs-lg-5">
+                                            Registre e acompanhe a presença dos seus alunos de forma simples,
+                                            rápida e segura.
+                                            Com o AprendeAI, professores e coordenadores podem lançar faltas com
+                                            poucos cliques e gerar relatórios completos de frequência por turma,
+                                            período ou aluno.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div id="perfil-aluno" class="tab-pane">
+                                <div class="row align-items-center">
+                                    <div class="col-md-6">
+                                        <img class="d-block w-100" src="img/Perfil do Aluno em Detalhes.png" alt="">
+                                    </div>
+                                    <div class="col-md-5">
+                                        <h4 class="text-center">Visão Completa do Aluno</h4>
+                                        <p class="fs-lg-5">
+                                            Acompanhe de forma detalhada o desempenho e comportamento de cada aluno.
+                                            Visualize entregas, notas, ocorrências e observações pedagógicas em um único
+                                            lugar.
+                                            Uma funcionalidade pensada para valorizar o olhar individualizado de cada
+                                            educador.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div id="relatorios" class="tab-pane">
+                                <div class="row align-items-center">
+                                    <div class="col-md-6">
+                                        <img class="d-block w-100"
+                                            src="img/Homem idoso analisando relatórios no laptop.png" alt="">
+                                    </div>
+                                    <div class="col-md-5">
+                                        <h4 class="text-center">Visualize o progresso das suas turmas</h4>
+                                        <p class="fs-lg-5">
+                                            Gere relatórios completos sobre presença, atividades, avaliações e
+                                            planejamento em poucos segundos.
+                                            Com o AprendeAI, professores e coordenadores podem acompanhar o desempenho
+                                            das turmas e tomar decisões com base em dados confiáveis e atualizados.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div id="horarios" class="tab-pane">
+                                <div class="row align-items-center">
+                                    <div class="col-md-6">
+                                        <img class="d-block w-100" src="img/Colaboração na organização do horário.png"
+                                            alt="">
+                                    </div>
+                                    <div class="col-md-5">
+                                        <h4 class="text-center"> Grade Horária Inteligente</h4>
+                                        <p class="fs-lg-5">
+                                            Organize sua semana com clareza. Professores podem sincronizar suas turmas
+                                            com o calendário, enquanto coordenadores estruturam a grade horária da
+                                            escola sem conflitos.
+                                            Um recurso inteligente para facilitar a rotina de quem ensina e quem
+                                            coordena.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
+                </div>
+        </section>
+        <section id="planos" class="p-5 mt-md-5 mb-md-5">
+            <div class="container">
+                <div class="row">
+                    <h2 class="text-center">Planos</h2>
+                </div>
+                <div class="d-flex flex-wrap justify-content-center gap-4">
+                    <div class=" card bg-white rounded-5 p-4">
+                        <img class="d-block w-100 rounded" src="img/Professores e símbolos educacionais.png" alt="">
+                        <h3>Professor</h3>
+                        <p>Tenha acesso completo aos recursos para gerenciar sua disciplina com eficiência e
+                            praticidade.</p>
+                        <ul class="list-unstyled">
+                            <li><i class="bi bi-check-circle-fill text-success me-2"></i> Aulas com base na BNCC</li>
+                            <li><i class="bi bi-check-circle-fill text-success me-2"></i> Criação e correção de
+                                avaliações</li>
+                            <li><i class="bi bi-check-circle-fill text-success me-2"></i> Controle de frequência da sua
+                                turma</li>
+                            <li><i class="bi bi-check-circle-fill text-success me-2"></i> Relatórios e histórico do
+                                aluno</li>
+                            <li><i class="bi bi-check-circle-fill text-success me-2"></i> Perfil individual dos
+                                estudantes</li>
+                        </ul>
+                        <a href="#" class="btn btn-primary mt-3 w-100">Assinar</a>
+                    </div>
+
+
+                    <div class="card bg-white rounded-5 p-4">
+                        <img class="d-block w-100 rounded" src="img/Mulher profissional em frente ao laptop.png" alt="">
+                        <h3>Coordenador</h3>
+                        <p>Gerencie várias turmas, acompanhe todos os professores e tenha acesso a relatórios amplos e
+                            horários.</p>
+                        <ul class="list-unstyled">
+                            <li><i class="bi bi-check-circle-fill text-success me-2"></i> Todos os recursos do plano
+                                Professor</li>
+                            <li><i class="bi bi-check-circle-fill text-success me-2"></i> Gestão de múltiplas turmas e
+                                disciplinas</li>
+                            <li><i class="bi bi-check-circle-fill text-success me-2"></i> Criação de relatórios
+                                escolares amplos</li>
+                            <li><i class="bi bi-check-circle-fill text-success me-2"></i> Montagem e organização de
+                                horários</li>
+                            <li><i class="bi bi-check-circle-fill text-success me-2"></i> Acompanhamento do desempenho
+                            </li>
+                        </ul>
+                        <a href="#" class="btn btn-primary mt-3 w-100">Assinar</a>
+                    </div>
+
+
+                    <div class="card bg-white rounded-5 p-4">
+                        <img class="d-block w-100 rounded" src="img/Foto de equipe diante de gráfico.png" alt="">
+                        <h3>Escola</h3>
+                        <p>Ideal para instituições com múltiplos usuários, com acesso total e condições comerciais
+                            diferenciadas.</p>
+                        <ul class="list-unstyled">
+                            <li><i class="bi bi-check-circle-fill text-success me-2"></i> Todos os recursos dos planos
+                                anteriores</li>
+                            <li><i class="bi bi-check-circle-fill text-success me-2"></i> Acesso simultâneo para todos
+                            </li>
+                            <li><i class="bi bi-check-circle-fill text-success me-2"></i> Relatórios integrados</li>
+                            <li><i class="bi bi-check-circle-fill text-success me-2"></i> Condições especiais e
+                                personalização</li>
+                            <li><i class="bi bi-check-circle-fill text-success me-2"></i> Suporte direto para
+                                instituições</li>
+                        </ul>
+                        <a href="#" class="btn btn-primary mt-3 w-100">Fale conosco</a>
+                    </div>
+
                 </div>
             </div>
         </section>
-        <section id="planos">
 
-        </section>
-        <section id="contato">
-
+        <section id="contato" class="p-5 mt-md-5 mb-md-5">
+            <div class="container">
+                <div class="row">
+                    <h2 class="text-center mb-3">Fale conosco</h2>
+                </div>
+                <div class="row gx-5">
+                    <div class="col-md-7">
+                        <form>
+                            <div class="mt-3 mb-3 input-nome">
+                                <label for="nome" class="form-label">Nome completo</label>
+                                <input id="nome" type="text" class="form-control" required>
+                            </div>
+                            <div class="mt-3 mb-3 input-email">
+                                <label for="email" class="form-label">E-mail</label>
+                                <input id="email" type="email" class="form-control" required>
+                            </div>
+                            <div class="mt-3 mb-3 input-telefone">
+                                <label for="telefone" class="form-label">Telefone</label>
+                                <input id="telefone" type="text" class="form-control" required>
+                            </div>
+                            <div class="mt-3 mb-3 input-menssagem">
+                                <label for="menssagem" class="form-label">Sua mensagem</label>
+                                <textarea class="form-control" id="menssagem"></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-success mt-3">Enviar</button>
+                        </form>
+                    </div>
+                    <div class="col-md-5">
+                        <div class="row mt-3">
+                            <h3 class="section-title fs-4 text-colored">
+                                <i class="bi bi-hand-thumbs-up-fill"></i>
+                                Redes sociais
+                            </h3>
+                            <ul class="list-unstyled d-flex gap-3">
+                                <li class="fs-5">
+                                    <a href="#">
+                                        <i class="bi bi-facebook text-colored"></i>
+                                    </a>
+                                </li>
+                                <li class="fs-5 ms-1 me-1">
+                                    <a href="#">
+                                        <i class="bi bi-instagram text-colored"></i>
+                                    </a>
+                                </li>
+                                <li class="fs-5">
+                                    <a href="#">
+                                        <i class="bi bi-whatsapp text-colored"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="row mt-4">
+                            <h3 class="fs-4">
+                                <i class="bi bi-cursor-fill"></i>
+                                Endereço
+                            </h3>
+                            <p>Rua teste exemplo nº145, Bairro Bootstrap - Fortaleza - CE</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
     </div>
 

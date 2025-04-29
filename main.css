@@ -40,6 +40,24 @@
     width: 90%;
 }
 
+#recursos .nav-link.active {
+    font-size: 1.25rem;
+    background-color: #E8F4FA;
+    color: #1A2A6C;
+}
+
+#recursos .nav-link {
+    font-size: 1.25rem;
+    color: #1A2A6C;
+}
+
+#planos {
+    background-color: #EAF6FF;
+}
+
+.card {
+    max-width: 380px;
+}
 @media (max-width:764px) {
     .nav-cabecalho {
         max-width: 100%;
@@ -61,6 +79,10 @@
 
     #sobre .row .img-sobre {
         width: 100%;
+    }
+
+    .card {
+        max-width: 100%;
     }
 }
 
